@@ -17,16 +17,15 @@ public class NumberGame {
             System.out.println("You have " + i + "guess(es) left. Choose again");
             int guess = scanner.nextInt();
 
+            // Random
+
             if (randomNumber < guess) {
                 System.out.println("It's smaller than " + guess + ".");
 
-            }
-            if (randomNumber > guess) {
+            }else if (randomNumber > guess) {
                 System.out.println("It's greater than " + guess + ".");
-            }
 
-                if (randomNumber == guess) {
-
+            }else{
                     hasWon = true;
                     break;
                 }
